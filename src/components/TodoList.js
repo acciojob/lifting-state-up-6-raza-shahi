@@ -2,8 +2,9 @@ import React from "react";
 
 const TodoList = ({ todos, handleComplete }) => {
   return (
-    <div>
+    
       <ul>
+        <h2>Child Component</h2>
         {todos.map((todo) => (
           <li key={todo.id}>
             {todo.task}
@@ -13,7 +14,6 @@ const TodoList = ({ todos, handleComplete }) => {
           </li>
         ))}
       </ul>
-    </div>
   );
 };
 
